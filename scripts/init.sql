@@ -223,7 +223,7 @@ create table record
         primary key,
     depth      double precision,
     number     integer,
-    time       time,
+    time       timestamp,
     profile_id integer
         references profile
 );
@@ -246,8 +246,8 @@ create table record_metadata
         references algal_condition,
     observations       varchar,
     laboratory         varchar,
-    arrival_time       time,
-    departure_time     time,
+    arrival_time       timestamp,
+    departure_time     timestamp,
     latitude           double precision,
     longitude          double precision,
     subregion_id       integer
@@ -273,8 +273,8 @@ create table river_record_metadata
         references river_gauge,
     observations   varchar,
     laboratory     varchar,
-    arrival_time   time,
-    departure_time time,
+    arrival_time   timestamp,
+    departure_time timestamp,
     latitude       double precision,
     longitude      double precision,
     subregion_id   integer

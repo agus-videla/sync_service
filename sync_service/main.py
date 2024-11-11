@@ -27,6 +27,7 @@ async def create_river_record(metadata: RiverRecordMetadataCreate, db: Session =
         latitude=metadata.latitude,
         longitude=metadata.longitude,
         observations=metadata.observations,
+        laboratory="AquaLink",
     )
 
     db.add(db_metadata)

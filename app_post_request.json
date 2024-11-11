@@ -1,0 +1,104 @@
+{
+  "devices": [
+    {
+      "crossRef": {
+        "deviceCategory": "principal",
+        "deviceId": 1,
+        "registerMetadataId": 4
+      },
+      "device": {
+        "belonging": "idk?",
+        "id": 1,
+        "make": "Aquaread",
+        "model": "AP-7000"
+      }
+    }
+  ],
+  "personas": [
+    {
+      "crossRef": {
+        "personaId": 2,
+        "registerMetadataId": 4,
+        "role": "Sampler"
+      },
+      "persona": {
+        "affiliation": "UCC",
+        "dni": "3781236",
+        "firstName": "Ignacio",
+        "id": 2,
+        "lastName": "Achaval"
+      }
+    },
+    {
+      "crossRef": {
+        "personaId": 1,
+        "registerMetadataId": 4,
+        "role": "Gauger"
+      },
+      "persona": {
+        "affiliation": "UCC",
+        "dni": "34982340",
+        "firstName": "Silvia",
+        "id": 1,
+        "lastName": "Casermeiro"
+      }
+    }
+  ],
+  "registerMetadata": {
+    "arrivalTime": "2024-11-10T23:26:22.019564",
+    "departureTime": "2024-11-10T23:26:22.019564",
+    "id": 4,
+    "isSynced": false,
+    "latitude": 123,
+    "longitude": 321
+  },
+  "riverRegisters": {
+    "riverRegister": {
+      "area": 123,
+      "averageSpeed": 453,
+      "cloudiness": "Despejado",
+      "conductivity": 5432,
+      "envTemperature": 32,
+      "gaugeObservations": "jfjieru asldkfjqw eroiquwer",
+      "hm": 234,
+      "id": 4,
+      "od": 34,
+      "odPercentage": 32,
+      "ph": 123,
+      "precipitation": "Llovizna",
+      "q": 321,
+      "registerMetadataId": 4,
+      "siteId": 1,
+      "tds": 23,
+      "turbidity": 5431,
+      "waterColor": "Turbio",
+      "waterOdor": "Fuerte",
+      "waterTemperature": 12,
+      "width": 23,
+      "windStatus": "Viento Leve",
+      "z": 2
+    },
+    "site": {
+      "abbreviation": "C",
+      "id": 1,
+      "site": "Centro"
+    },
+    "vegetationList": [
+      {
+        "context": "SHORE",
+        "id": 1,
+        "name": "Herbácea"
+      },
+      {
+        "context": "SHORE",
+        "id": 2,
+        "name": "Arbórea (>1.5m)"
+      },
+      {
+        "context": "WATER",
+        "id": 4,
+        "name": "Macrófitas"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:14.1
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: pidatabase
+    volumes:
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - mynetwork
+
+  sync_service:
+    build:
+      context: ./sync_service
+    container_name: sync_service_container
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=pidatabase
+      - DB_USER=postgres
+      - DB_PASSWORD=mypassword
+    depends_on:
+      - db
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
+
+volumes:
+  db-data:

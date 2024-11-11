@@ -45,8 +45,8 @@
     }
   ],
   "registerMetadata": {
-    "arrivalTime": "2024-11-10T23:26:22.019564",
-    "departureTime": "2024-11-10T23:26:22.019564",
+    "arrivalTime": {},
+    "departureTime": {},
     "id": 4,
     "isSynced": false,
     "latitude": 123,
